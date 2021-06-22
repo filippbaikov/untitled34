@@ -15,7 +15,7 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root, 400, 350));
         primaryStage.show();
     }
-
+// окно чата( размер, название и т.д)
 
     public static void main(String[] args) {
         launch(args);
