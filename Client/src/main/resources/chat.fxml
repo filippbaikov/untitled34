@@ -6,9 +6,13 @@
 
 <VBox alignment="center" prefHeight="26.0" prefWidth="165.0" xmlns="http://javafx.com/javafx/8.0.1"
       xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientPack.Controller">
+    <HBox fx:id="authPanel">
+        <TextField promptText="введи имя" fx:id="userField" HBox.hgrow="ALWAYS" onAction="#authUser"/>
+        <Button onAction="#authUser">Подключиться</Button>
+    </HBox>
     <TextArea fx:id="textArea" VBox.vgrow="ALWAYS" editable="false"/>
-    <HBox>
-        <TextField fx:id="textField" HBox.hgrow="ALWAYS" onAction="#sendMessage"/>
+    <HBox fx:id="mesPanel" visible="false" managed="false">
+        <TextField promptText="введи сообщение" fx:id="textField" HBox.hgrow="ALWAYS" onAction="#sendMessage"/>
         <Button onAction="#sendMessage">Отправить</Button>
     </HBox>
 
