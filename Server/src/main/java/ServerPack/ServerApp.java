@@ -8,7 +8,7 @@ import java.net.Socket;
 
 public class ServerApp {
     public static void main(String[] args) {
-        new Server(); //создали сервер
+        new Server();
     }
 }
 
